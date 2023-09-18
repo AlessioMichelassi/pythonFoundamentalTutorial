@@ -7,46 +7,45 @@
 memories = {}
 
 
-def checkOperation(question):
-    # sourcery skip: assign-if-exp
+def checkOperation(stringOperation):
     """
     Controllo se l'operazione è una somma, sottrazione, moltiplicazione, divisione o potenza.
-    :param question:
+    :param stringOperation:
     :return:
     """
     try:
-        if "+" in question:
-            parts = question.split("+")
+        if "+" in stringOperation:
+            parts = stringOperation.split("+")
             operandA = getValueFromInputOrMemory(parts[0].strip())
             operandB = getValueFromInputOrMemory(parts[1].strip())
             return operandA + operandB
-        elif "-" in question:
-            parts = question.split("-")
+        elif "-" in stringOperation:
+            parts = stringOperation.split("-")
             operandA = getValueFromInputOrMemory(parts[0].strip())
             operandB = getValueFromInputOrMemory(parts[1].strip())
             return operandA - operandB
-        elif "*" in question:
-            parts = question.split("*")
+        elif "*" in stringOperation:
+            parts = stringOperation.split("*")
             operandA = getValueFromInputOrMemory(parts[0].strip())
             operandB = getValueFromInputOrMemory(parts[1].strip())
             return operandA * operandB
-        elif "/" in question:
-            parts = question.split("/")
+        elif "/" in stringOperation:
+            parts = stringOperation.split("/")
             operandA = getValueFromInputOrMemory(parts[0].strip())
             operandB = getValueFromInputOrMemory(parts[1].strip())
             if operandB != 0:
                 return operandA / operandB
             else:
                 return "Divisione per zero!"
-        elif "^" in question:
-            parts = question.split("^")
+        elif "^" in stringOperation:
+            parts = stringOperation.split("^")
             operandA = getValueFromInputOrMemory(parts[0].strip())
             operandB = getValueFromInputOrMemory(parts[1].strip())
             return operandA ** operandB
         else:
             return "Operazione non riconosciuta."
     except ValueError:
-        return f"Valore non valido in '{question}'"
+        return f"Valore non valido in '{stringOperation}'"
 
 
 def putInMemories():
