@@ -19,6 +19,8 @@ Questo tutorial è stato creato per aiutare i principianti a familiarizzare con 
 - **Sfida1**: creare una calcolatrice che permette di fare somme, sottrazioni, moltiplicazioni e divisioni scrivendo in input: `3+2` o `3-2` o `3*2` o `3/2`
 
 ## Tutorial 03:
-- **I loop con for**
-- **Dizionari**
+- **I loop con For**
+- **Dizionari e Liste**
 - **Sfida2**: Il cifrario di Cesare!
+- **Brute Force**: usare la forza bruta per calcolare le radici
+- **Bisection**: un metodo alternativo 
