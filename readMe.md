@@ -1,4 +1,4 @@
-# SuperDuperPython
+# SuperDuperPY
 ## Introduzione
 
 Python è un linguaggio di programmazione versatile e potente, ed è un ottimo punto di partenza per chiunque voglia imparare a programmare. 
